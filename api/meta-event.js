@@ -130,7 +130,15 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    return res.status(200).json({ success: true, ...data });
+    return res.status(200).json({
+      success: true,
+      ...data,
+      debug: {
+        // Não expõe o token; apenas informa se o modo teste está ativo
+        test_mode_active: Boolean(process.env.META_TEST_EVENT_CODE),
+        pixel_id_configured: Boolean(PIXEL_ID),
+      },
+    });
   } catch (e) {
     return res.status(500).json({ error: 'Falha ao enviar à Meta', detail: e.message });
   }
