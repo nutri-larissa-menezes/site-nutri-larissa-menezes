@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ============================================================
+       GOOGLE TAG MANAGER
+       Carregado via VITE_GTM_ID (variável de ambiente definida na
+       Vercel). Se não configurado, o GTM não é inicializado.
+       IMPORTANTE: Não adicionar o Pixel do Meta solto aqui. Todo o
+       rastreamento do Meta passa pelo GTM para evitar duplicação.
+  ============================================================ -->
+  <script>
+    // Inicializa o dataLayer ANTES do GTM (obrigatório)
+    window.dataLayer = window.dataLayer || [];
+    // Injeção do GTM ID via variável de ambiente do build
+    (function () {
+      var gtmId = "%VITE_GTM_ID%";
+      if (!gtmId || gtmId.indexOf("GTM-") !== 0) {
+        // VITE_GTM_ID ainda não configurado no build
+        return;
+      }
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer',gtmId);
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larissa Menezes | Nutricionista em Niterói | Emagrecimento Estratégico 30+</title>
+  <meta name="description" content="Nutricionista em Icaraí/Niterói especializada em emagrecimento para Mulheres que estão cansadas de recomeçar. Recupere sua energia e conquiste resultados reais sem dietas restritivas.">
+  <meta name="keywords" content="Nutricionista Niterói, emagrecimento feminino, emagrecer depois dos 30, nutricionista Icaraí, dieta sem restrição.">
+  <meta name="robots" content="all">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Larissa Menezes — Emagrecimento Estratégico para Mulheres 30+">
+  <meta property="og:description" content="Recupere sua energia, destrave seu metabolismo e saia do ciclo de recomeços.">
+  <meta property="og:site_name" content="Larissa Menezes | Nutrição | Emagrecimento Estratégico">
+  <meta property="og:url" content="https://www.nutrilarissamenezes.com.br/">
+  <meta property="og:image" content="https://pages.greatpages.com.br/www.nutrilarissamenezes.com.br/1787598178/imagens/desktop/13572-607d98eb03045b8540383d97a202c50e.png">
+  <link rel="icon" href="https://pages.greatpages.com.br/www.nutrilarissamenezes.com.br/1787598178/imagens/desktop/13572-2f6b2dfbd241a6cbf65264441fc173ef.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://elfsightcdn.com">
+  <link rel="preconnect" href="https://core.service.elfsight.com" crossorigin>
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <style>
+    :root {
+      --color-primary: #207a03;
+      --color-primary-hover: #2fa20a;
+      --color-primary-text: #ffffff;
+      --color-secondary: #dbc7bc;
+      --color-secondary-text: #000000;
+      --color-accent: #ff0000;
+      --color-accent-hover: #ff4d4d;
+      --color-destructive: #d60000;
+      --color-muted: #4a553f;
+      --color-base: #ffffff;
+      --color-text: #000000;
+      --color-custom-maroon: #740d38;
+      --color-custom-darkgreen: #70815f;
+      --color-light-green: #f5ffef;
+      --color-light-red: #ffefef;
+      --color-glow-green: #10ff00;
+      --color-gray: #dad9dc;
+      --font-heading: 'Roboto', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+      --radius-small: 4px;
+      --radius-medium: 10px;
+      --radius-large: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background: var(--color-base);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===== HEADER / NAVBAR ===== */
+    .navbar {
+      display: none !important;
+      background-image: url('https://files.greatpages.com.br/arquivos/paginas_editor/576645-7089d4e397ef3af92541b3a3a6b6c7bc.png');
+      background-size: cover;
+      background-position: center;
+      background-color: var(--color-muted);
+      padding: 12px 0;
+      position: relative;
+      z-index: 100;
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .navbar-nav {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .navbar-nav a {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-base);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: opacity 0.3s;
+    }
+
+    .navbar-nav a:hover {
+      opacity: 0.8;
+    }
+
+    .navbar-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .navbar-hamburger span {
+      width: 28px;
+      height: 3px;
+      background: var(--color-base);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* ===== ATTENTION BAR ===== */
+    .attention-bar {
+      background: var(--color-accent);
+      padding: 14px 0;
+      text-align: center;
+      animation: attentionPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes attentionPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.85; }
+    }
+
+    .attention-bar h2 {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-base);
+      letter-spacing: 1px;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: var(--color-custom-darkgreen);
+      background-image: url('https://files.greatpages.com.br/arquivos/paginas_editor/576645-17bbfd53482e23bf051e0ea98a24d57c.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.4);
+      z-index: 0;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h1 {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-text);
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+
+    .hero-content p strong {
+      font-weight: 700;
+    }
+
+    .hero-location {
+      font-size: 0.9rem;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--color-text);
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .hero-image {
+      flex: 0 0 350px;
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 350px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* ===== CTA BUTTON ===== */
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--color-primary);
+      color: var(--color-primary-text);
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 16px 32px;
+      border: none;
+      border-radius: var(--radius-large);
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(32, 122, 3, 0.3);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .cta-button:hover {
+      background: var(--color-primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(32, 122, 3, 0.4);
+    }
+
+    .cta-button svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .cta-center {
+      display: flex;
+      justify-content: center;
+      padding: 0 0 40px;
+    }
+
+    /* ===== HOW IT WORKS ===== */
+    .how-it-works {
+      background: var(--color-secondary);
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+
+    .section-title-left {
+      text-align: left;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #242424;
+      margin-bottom: 40px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .step-card {
+      background: var(--color-base);
+      border-radius: var(--radius-medium);
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-number {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--color-secondary);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      line-height: 1;
+      opacity: 0.7;
+    }
+
+    .step-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--color-muted);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== FOR YOU / NOT FOR YOU ===== */
+    .for-you-section {
+      background: var(--color-base);
+      padding: 60px 0;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .comparison-card {
+      border-radius: var(--radius-medium);
+      padding: 30px;
+      position: relative;
+    }
+
+    .comparison-card.is-for {
+      background: var(--color-light-green);
+      border: 2px solid var(--color-glow-green);
+      box-shadow: 0 0 10px var(--color-glow-green);
+    }
+
+    .comparison-card.not-for {
+      background: var(--color-light-red);
+      border: 2px solid var(--color-accent);
+      box-shadow: 0 0 10px var(--color-accent);
+    }
+
+    .comparison-card h3 {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--color-text);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .comparison-card .badge {
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: var(--radius-medium);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .comparison-card.is-for .badge {
+      background: #09ad00;
+      color: var(--color-base);
+    }
+
+    .comparison-card.not-for .badge {
+      background: var(--color-destructive);
+      color: var(--color-base);
+    }
+
+    .comparison-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--color-text);
+    }
+
+    .comparison-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .comparison-icon {
+      flex-shrink: 0;
+      font-size: 1.2rem;
+      margin-top: 2px;
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      background: var(--color-base);
+      background-image: url('https://files.greatpages.com.br/arquivos/paginas_editor/576645-00cbe42d9519252a7fdb9ad59482c360.png');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 0;
+      position: relative;
+    }
+
+    .about::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.5);
+      z-index: 0;
+    }
+
+    .about .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-title {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-text);
+      margin-bottom: 10px;
+    }
+
+    .about-title span {
+      display: block;
+      color: var(--color-muted);
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    .about-grid {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+
+    .about-image {
+      flex: 0 0 320px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-medium);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      font-style: italic;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+
+    .about-text p strong {
+      font-weight: 700;
+    }
+
+    /* ===== RESULTS ===== */
+    .results {
+      background: var(--color-secondary);
+      padding: 60px 0;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .results-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .result-card {
+      border-radius: var(--radius-large);
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .result-card:hover {
+      transform: scale(1.03);
+    }
+
+    .result-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .result-card.portrait {
+      aspect-ratio: 3/4;
+    }
+
+    .result-card.landscape {
+      aspect-ratio: 16/9;
+    }
+
+    .result-card.square {
+      aspect-ratio: 1;
+    }
+
+    /* ===== GOOGLE REVIEWS (Elfsight) ===== */
+    .reviews-section {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .reviews-section .elfsight-app-b17aa8c3-5d7c-4ae4-88e5-3066c6d07abd {
+      min-height: 320px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--color-base);
+      padding: 20px 0;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+    .footer p {
+      font-size: 0.85rem;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--color-text);
+    }
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+
+    /* ===== RESPONSIVE STYLES & BREAKPOINTS ===== */
+
+    /* Tablet & Medium Screens (769px - 1024px) */
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .container {
+        padding: 0 24px;
+      }
+
+      .hero .container {
+        gap: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-image {
+        flex: 0 0 300px;
+      }
+
+      .hero-image img {
+        width: 300px;
+      }
+
+      .navbar-nav {
+        gap: 18px;
+      }
+
+      .navbar-nav a {
+        font-size: 13px;
+      }
+
+      .results-grid,
+      .results-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile & Small Screens (<= 768px) */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 20px;
+      }
+
+      .navbar-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-muted);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        z-index: 200;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .navbar-nav.active {
+        display: flex;
+      }
+
+      .navbar-nav a {
+        padding: 10px 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .navbar-nav li:last-child a {
+        border-bottom: none;
+      }
+
+      .navbar-hamburger {
+        display: flex;
+        min-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero .container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 24px;
+      }
+
+      .hero-image {
+        flex: none;
+        order: -1;
+      }
+
+      .hero-image img {
+        width: 260px;
+        margin: 0 auto;
+      }
+
+      .hero-content h1 {
+        font-size: 1.55rem;
+        line-height: 1.3;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .about-title {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .steps-grid,
+      .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .about-grid {
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .about-image {
+        flex: none;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+
+      .about-text {
+        text-align: center;
+      }
+
+      .results-grid,
+      .results-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+
+      .cta-button {
+        font-size: 0.95rem;
+        padding: 14px 20px;
+        min-height: 50px;
+      }
+
+      .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        bottom: 18px;
+        right: 18px;
+      }
+
+      .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    /* Extra Small Devices (<= 480px) */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .attention-bar h2 {
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+      }
+
+      .hero-content h1 {
+        font-size: 1.35rem;
+      }
+
+      .hero-content p {
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
+      .hero-image img {
+        width: 220px;
+      }
+
+      .results-grid,
+      .results-grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .about-title {
+        font-size: 1.6rem;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+
+      .step-card {
+        padding: 24px 20px;
+      }
+
+      .step-number {
+        font-size: 3rem;
+      }
+
+      .comparison-card {
+        padding: 20px 16px;
+      }
+
+      .comparison-item {
+        font-size: 0.9rem;
+      }
+
+      .modal-card {
+        padding: 24px 18px;
+        max-height: 90vh;
+        overflow-y: auto;
+      }
+
+      .modal-title {
+        font-size: 1.05rem;
+      }
+
+      .modal-highlight {
+        font-size: 0.9rem;
+      }
+
+      .modal-description {
+        font-size: 0.85rem;
+      }
+
+      .modal-btn {
+        font-size: 0.9rem;
+        padding: 12px 14px;
+      }
+    }
+
+    /* ===== WHATSAPP VALIDATION MODAL ===== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-card {
+      background: #f3fbf0;
+      width: 100%;
+      max-width: 440px;
+      border-radius: 18px;
+      padding: 28px 24px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      transform: scale(0.9);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.active .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      color: #3b6b29;
+      cursor: pointer;
+      line-height: 1;
+      padding: 8px;
+      transition: opacity 0.2s;
+      min-width: 40px;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-close:hover {
+      opacity: 0.7;
+    }
+
+    .modal-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1c6b02;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .modal-highlight {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1c6b02;
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+
+    .modal-highlight u {
+      text-decoration: underline;
+    }
+
+    .modal-description {
+      font-size: 0.88rem;
+      color: #2b5d19;
+      line-height: 1.5;
+      margin-bottom: 22px;
+    }
+
+    .modal-btn {
+      display: block;
+      width: 100%;
+      background: var(--color-primary);
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 14px 16px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(32, 122, 3, 0.3);
+      min-height: 48px;
+    }
+
+    .modal-btn:hover {
+      background: var(--color-primary-hover);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <!-- GTM noscript (fallback quando JS está desabilitado) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=%VITE_GTM_ID%"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-8d2626842565d58c1adb70fa6b856955.png" alt="Larissa Menezes - Nutricionista">
+      </a>
+      <div class="navbar-hamburger" onclick="document.querySelector('.navbar-nav').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar-nav">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="https://wa.me/5521967308920" target="_blank">Agendar Consulta</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ATTENTION BAR -->
+  <section class="attention-bar">
+    <div class="container">
+      <h2>ATENÇÃO: NÃO ACEITAMOS PLANO DE SAÚDE</h2>
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <h1>RECUPERE SUA ENERGIA E DESTRAVE SEU EMAGRECIMENTO</h1>
+        <p>Cansaço constante, efeito sanfona, roupas apertadas e a sensação de que nada funciona depois dos 30 não é falta de disciplina, <strong>é falta de estratégia.</strong></p>
+        <p>Com <strong>meu acompanhamento</strong>, é possível organizar sua alimentação para a sua rotina, recuperar sua energia e finalmente ver os resultados aparecerem com constância, sem terrorismo alimentar e sem tentativas aleatórias.</p>
+        <div class="cta-center">
+          <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            AGENDAR CONSULTA NO WHATSAPP!
+          </a>
+        </div>
+        <p class="hero-location">NUTRICIONISTA EM ICARAÍ - NITERÓI</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-0ea9346e0ef72c0f90cf5b1b3ca5032a.png" alt="Larissa Menezes - Nutricionista">
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <h2 class="section-title">COMO FUNCIONA O MEU ACOMPANHAMENTO</h2>
+      <hr style="border: none; border-top: 3px solid var(--color-text); width: 250px; margin: 10px auto 40px;">
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <span class="step-number">1</span>
+          <h3>Ajuste da Engrenagem Metabólica</h3>
+          <p>Antes de pensar em cortar calorias, focamos em devolver energia para o seu corpo. Uma mulher exausta não consegue manter a constância. Ajustamos os nutrientes para que seu corpo volte a responder.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <h3>Organização Alimentar para a sua Rotina</h3>
+          <p>Sua alimentação precisa caber no seu dia, não o contrário. Planejamos suas refeições pensando nos dias corridos, no trabalho e na sua vida social, para que você não precise se isolar para emagrecer.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <h3>Controle da Fome e Comportamento</h3>
+          <p>Implementamos estratégias para dominar a fome noturna e o desejo por recompensas após um dia estressante. Você deixa de ser refém do emocional e passa a ter controle sobre suas escolhas.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <span class="step-number">4</span>
+          <h3>Suporte e Ajustes Contínuos</h3>
+          <p>O emagrecimento não é uma linha reta. Por isso, temos um acompanhamento próximo para ajustar a estratégia alimentar e garantindo que você não pare no primeiro obstáculo.</p>
+        </div>
+      </div>
+
+      <div class="cta-center">
+        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          AGENDAR CONSULTA NO WHATSAPP!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR YOU / NOT FOR YOU -->
+  <section class="for-you-section">
+    <div class="container">
+      <div class="comparison-grid">
+        <!-- Is for you -->
+        <div class="comparison-card is-for">
+          <div class="badge">ESSE ACOMPANHAMENTO É PRA VOCÊ SE…</div>
+          <div class="comparison-item">
+            <span class="comparison-icon">✅</span>
+            <span>Quer um acompanhamento nutricional personalizado e adaptado à sua rotina.</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-icon">✅</span>
+            <span>Está cansada do efeito sanfona e de viver recomeçando.</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-icon">✅</span>
+            <span>Quer emagrecer com estratégia, acompanhamento próximo e mudanças que consiga manter.</span>
+          </div>
+        </div>
+
+        <!-- Not for you -->
+        <div class="comparison-card not-for">
+          <div class="badge">ESSE ACOMPANHAMENTO NÃO É PRA VOCÊ SE…</div>
+          <div class="comparison-item">
+            <span class="comparison-icon">🚫</span>
+            <span>Procura consulta comum pelo plano de saúde.</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-icon">🚫</span>
+            <span>Quer apenas uma dieta pronta, restrições extremas ou uma solução rápida para emagrecer.</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-icon">🚫</span>
+            <span>Não está disposta a investir para conquistar sua melhor saúde e corpo desejado.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-center">
+        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          AGENDAR CONSULTA NO WHATSAPP!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <h2 class="about-title">
+        PRAZER,<br>LARISSA MENEZES
+        <span></span>
+      </h2>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-b1d98e5ca03b34d1ce707a4151be4978.png" alt="Larissa Menezes - Nutricionista">
+        </div>
+        <div class="about-text">
+          <p>Sou nutricionista formada pela Universidade Federal Fluminense e especializada em emagrecimento. Meu trabalho é tirar o peso da culpa dos seus ombros e te dar as ferramentas para um emagrecimento que você consiga sustentar. Eu entendo a dor de não se reconhecer no espelho e de sentir que a rotina engole sua saúde.</p>
+          <p>Trabalho com método e estratégia, mas sem esquecer que por trás de cada paciente existe uma vida real com imprevistos, estresse e vontade de ser feliz. Meu compromisso é te guiar para que você pare de sofrer e volte a ter <strong>orgulho do seu corpo.</strong></p>
+        </div>
+      </div>
+
+      <div class="cta-center" style="margin-top: 30px;">
+        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          AGENDAR CONSULTA NO WHATSAPP!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results" id="resultados">
+    <div class="container">
+      <h2 class="section-title">O QUE ACONTECE QUANDO VOCÊ TEM O DIRECIONAMENTO CERTO?</h2>
+      <p class="section-subtitle">Quando a estratégia é ajustada para a sua realidade:</p>
+
+      <!-- Results Gallery Row 1 -->
+      <div class="results-grid">
+        <div class="result-card portrait">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-9b4c0b750f390d2d723a7d602e6e5617.png" alt="Resultado 1">
+        </div>
+        <div class="result-card portrait">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-2a3447320a7babbed25de4ba55beca48.png" alt="Resultado 2">
+        </div>
+      </div>
+
+      <!-- Results Gallery Row 2 -->
+      <div class="results-grid-2">
+        <div class="result-card landscape">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-200cdcc43e06507ffac06eeebbac4db4.jpeg" alt="Resultado 3">
+        </div>
+        <div class="result-card landscape">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-a2a9461b70fb7198d25e79a9af59e5df.jpeg" alt="Resultado 4">
+        </div>
+      </div>
+
+      <!-- Results Gallery Row 3 -->
+      <div class="results-grid">
+        <div class="result-card portrait">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-3ba0147b69f4d1b12e4e36c662e82fa8.png" alt="Resultado 5">
+        </div>
+        <div class="result-card landscape">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-3687965561aac54dfe5136cea2f6eb03.jpeg" alt="Resultado 6">
+        </div>
+      </div>
+
+      <!-- Results Gallery Row 4 -->
+      <div class="results-grid-2">
+        <div class="result-card landscape">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-23c2d2bb63b481ab23464241fb8d462a.png" alt="Resultado 7">
+        </div>
+        <div class="result-card portrait">
+          <img src="https://files.greatpages.com.br/arquivos/paginas_editor/576645-b1c4dadd593740b1fddad3e4c02f2085.png" alt="Resultado 8">
+        </div>
+      </div>
+
+      <!-- Google Reviews -->
+      <div class="reviews-section">
+        <div class="elfsight-app-b17aa8c3-5d7c-4ae4-88e5-3066c6d07abd" data-elfsight-app-lazy></div>
+      </div>
+
+      <div class="cta-center">
+        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          AGENDAR CONSULTA NO WHATSAPP!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2016 – Larissa Menezes | Nutrição e Emagrecimento Estratégico Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- WHATSAPP VALIDATION MODAL -->
+  <div class="modal-overlay" id="whatsapp-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Fechar">&times;</button>
+      <h3 class="modal-title">ANTES DE CONTINUAR 💚</h3>
+      <p class="modal-highlight">A Larissa <u>não atende</u> por plano de saúde.</p>
+      <p class="modal-description">O atendimento é particular e personalizado, para mulheres que buscam acompanhamento profissional para emagrecer com estratégia e constância.</p>
+      <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="modal-btn" id="modal-whatsapp-action" data-meta-event="contact">
+        Entendi e quero FALAR COM A LARISSA
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // ================================================================
+    // RASTREAMENTO META (Conversions API + Pixel via GTM)
+    // - PageView: enviado pelo Pixel via GTM (All Pages)
+    // - Contact: enviado pelo Pixel (dataLayer) E pela CAPI (fetch),
+    //   compartilhando o mesmo event_id para a Meta deduplicar.
+    // ================================================================
+
+    (function () {
+      var CAPI_ENDPOINT = '/api/meta-event';
+      var STORAGE_KEY = '__lm_tracking';
+
+      // ---- Helpers de cookie ----
+      function getCookie(name) {
+        var v = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return v ? v.pop() : '';
+      }
+      function setCookie(name, value, days) {
+        var expires = '';
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+          expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + (value || '') + expires + '; path=/';
+      }
+
+      // ---- Persistir fbp / fbc / event_id / utms em localStorage ----
+      function persistTracking(data) {
+        try {
+          var stored = {};
+          try { stored = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch (e) {}
+          // merge preservando valores existentes
+          for (var k in data) { if (data[k]) stored[k] = data[k]; }
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+          return stored;
+        } catch (e) { return data; }
+      }
+
+      function readTracking() {
+        try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch (e) { return {}; }
+      }
+
+      // ---- fbp: criado pelo Pixel do Meta; se ainda não existir, criamos um ----
+      function getOrCreateFbp() {
+        var existing = getCookie('_fbp');
+        if (existing) { persistTracking({ fbp: existing }); return existing; }
+        var ts = Math.floor(Date.now() / 1000);
+        var rnd = Math.floor(Math.random() * 0x7FFFFFFF);
+        var value = 'fb.1.' + ts + '.' + rnd;
+        setCookie('_fbp', value, 90);
+        persistTracking({ fbp: value });
+        return value;
+      }
+
+      // ---- fbc: clique do Facebook (a partir do parâmetro fbclid) ----
+      function captureFbc() {
+        var params = new URLSearchParams(window.location.search);
+        var fbclid = params.get('fbclid');
+        if (fbclid) {
+          var value = 'fb.1.' + Math.floor(Date.now() / 1000) + '.' + fbclid;
+          setCookie('_fbc', value, 90);
+          persistTracking({ fbc: value });
+        } else {
+          var existing = getCookie('_fbc') || '';
+          if (existing) persistTracking({ fbc: existing });
+        }
+      }
+
+      // ---- Capturar UTMs ----
+      function captureUtms() {
+        var params = new URLSearchParams(window.location.search);
+        var map = { utm_source: '_mc', utm_medium: '_mc', utm_campaign: '_mc',
+                    utm_content: '_mc', utm_term: '_mc' };
+        var out = {};
+        for (var key in map) {
+          var val = params.get(key);
+          if (val) out[key] = val;
+        }
+        if (Object.keys(out).length) persistTracking(out);
+        return out;
+      }
+
+      // ---- Gerar event_id único por interação ----
+      function generateEventId() {
+        return Date.now().toString(36) + '-' + Math.random().toString(36).substr(2, 9);
+      }
+
+      // ---- Captura automática no carregamento ----
+      getOrCreateFbp();
+      captureFbc();
+      captureUtms();
+
+      // ---- Enviar evento de contato (dataLayer + CAPI) ----
+      window.__sendContactEvent = function () {
+        var tracking = readTracking();
+        var eventId = generateEventId();
+
+        var payload = {
+          event_id: eventId,
+          event_time: Math.floor(Date.now() / 1000),
+          event_source_url: window.location.href,
+          fbp: tracking.fbp || getCookie('_fbp') || '',
+          fbc: tracking.fbc || getCookie('_fbc') || '',
+          utms: {
+            source: tracking.utm_source || '',
+            medium: tracking.utm_medium || '',
+            campaign: tracking.utm_campaign || '',
+            content: tracking.utm_content || '',
+            term: tracking.utm_term || ''
+          }
+        };
+
+        // 1) Evento no dataLayer -> alimenta a tag de Conversão (Contact) do Pixel no GTM
+        try {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'generate_contact',
+            'event_id': eventId,
+            'content_name': 'contato_whatsapp',
+            'waba_number': '5521967308920'
+          });
+        } catch (e) {}
+
+        // 2) Envio à Conversions API via serve-side (não bloqueado por iOS 14+/adblock)
+        try {
+          if (typeof fetch === 'function') {
+            fetch(CAPI_ENDPOINT, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload),
+              keepalive: true // garante envio mesmo com o redirecionamento ao WhatsApp
+            }).catch(function () {});
+          }
+        } catch (e) {}
+      };
+
+      // ================================================================
+      // LÓGICA DO MODAL (existente) + gatilho de contato
+      // ================================================================
+      document.addEventListener('DOMContentLoaded', function () {
+        var modal = document.getElementById('whatsapp-modal');
+        var closeBtn = document.getElementById('modal-close-btn');
+        var actionBtn = document.getElementById('modal-whatsapp-action');
+
+        var waLinks = document.querySelectorAll('a[href*="wa.me"]');
+
+        waLinks.forEach(function (link) {
+          if (link.id === 'modal-whatsapp-action') return;
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
+          });
+        });
+
+        closeBtn.addEventListener('click', function () {
+          modal.classList.remove('active');
+          modal.setAttribute('aria-hidden', 'true');
+        });
+
+        modal.addEventListener('click', function (e) {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Clique em "Entendi e quero FALAR COM A LARISSA" = CONTATO REAL
+        actionBtn.addEventListener('click', function () {
+          modal.classList.remove('active');
+          modal.setAttribute('aria-hidden', 'true');
+          // Dispara o evento de contato (Pixel + CAPI)
+          if (window.__sendContactEvent) window.__sendContactEvent();
+        });
+
+        // Auto-close mobile navbar menu
+        var navLinks = document.querySelectorAll('.navbar-nav a');
+        var navbarNav = document.querySelector('.navbar-nav');
+        navLinks.forEach(function (navLink) {
+          navLink.addEventListener('click', function () {
+            if (navbarNav) navbarNav.classList.remove('active');
+          });
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
