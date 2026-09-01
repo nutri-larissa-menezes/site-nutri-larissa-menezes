@@ -676,6 +676,24 @@
       }
     }
 
+    /* Desktop (>= 769px) */
+    @media (min-width: 769px) {
+      .results-grid,
+      .results-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .result-card {
+        aspect-ratio: auto;
+      }
+
+      .result-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
     /* Mobile & Small Screens (<= 768px) */
     @media (max-width: 768px) {
       .container {
