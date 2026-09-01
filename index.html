@@ -534,10 +534,52 @@
       font-weight: 700;
     }
 
-    /* ===== RESULTS ===== */
+    /* ===== RESULTS / PROVA SOCIAL ===== */
     .results {
       background: var(--color-secondary);
       padding: 60px 0;
+    }
+
+    /* Desktop 3-Column Masonry (GreatPages Layout) */
+    .results-desktop-masonry {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 40px;
+    }
+
+    .masonry-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .masonry-card {
+      background: var(--color-base);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      height: auto;
+    }
+
+    .masonry-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .masonry-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      border-radius: 14px;
+    }
+
+    .results-mobile-gallery {
+      display: none;
     }
 
     .results-grid {
@@ -678,24 +720,22 @@
 
     /* Desktop (>= 769px) */
     @media (min-width: 769px) {
-      .results-grid,
-      .results-grid-2 {
-        grid-template-columns: repeat(2, 1fr);
+      .results-desktop-masonry {
+        display: grid;
       }
-
-      .result-card {
-        aspect-ratio: auto;
-      }
-
-      .result-card img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
+      .results-mobile-gallery {
+        display: none !important;
       }
     }
 
     /* Mobile & Small Screens (<= 768px) */
     @media (max-width: 768px) {
+      .results-desktop-masonry {
+        display: none !important;
+      }
+      .results-mobile-gallery {
+        display: block !important;
+      }
       .container {
         padding: 0 20px;
       }
@@ -1193,43 +1233,85 @@
       <h2 class="section-title">O QUE ACONTECE QUANDO VOCÊ TEM O DIRECIONAMENTO CERTO?</h2>
       <p class="section-subtitle">Quando a estratégia é ajustada para a sua realidade:</p>
 
-      <!-- Results Gallery Row 1 -->
-      <div class="results-grid">
-        <div class="result-card portrait">
-          <img src="assets/img-11.png" alt="Resultado 1">
+      <!-- Desktop 3-Column Masonry (GreatPages Layout) -->
+      <div class="results-desktop-masonry">
+        <!-- Column 1 -->
+        <div class="masonry-col">
+          <div class="masonry-card">
+            <img src="assets/img-11.png" alt="Resultado 1">
+          </div>
+          <div class="masonry-card">
+            <img src="assets/img-5.png" alt="Resultado 7">
+          </div>
+          <div class="masonry-card">
+            <img src="assets/img-12.jpeg" alt="Resultado 4">
+          </div>
         </div>
-        <div class="result-card portrait">
-          <img src="assets/img-6.png" alt="Resultado 2">
+
+        <!-- Column 2 -->
+        <div class="masonry-col">
+          <div class="masonry-card">
+            <img src="assets/img-6.png" alt="Resultado 2">
+          </div>
+          <div class="masonry-card">
+            <img src="assets/img-8.png" alt="Resultado 5">
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="masonry-col">
+          <div class="masonry-card">
+            <img src="assets/img-4.jpeg" alt="Resultado 3">
+          </div>
+          <div class="masonry-card">
+            <img src="assets/img-7.jpeg" alt="Resultado 6">
+          </div>
+          <div class="masonry-card">
+            <img src="assets/img-13.png" alt="Resultado 8">
+          </div>
         </div>
       </div>
 
-      <!-- Results Gallery Row 2 -->
-      <div class="results-grid-2">
-        <div class="result-card landscape">
-          <img src="assets/img-4.jpeg" alt="Resultado 3">
+      <!-- Mobile Gallery (Exact Existing Structure) -->
+      <div class="results-mobile-gallery">
+        <!-- Results Gallery Row 1 -->
+        <div class="results-grid">
+          <div class="result-card portrait">
+            <img src="assets/img-11.png" alt="Resultado 1">
+          </div>
+          <div class="result-card portrait">
+            <img src="assets/img-6.png" alt="Resultado 2">
+          </div>
         </div>
-        <div class="result-card landscape">
-          <img src="assets/img-12.jpeg" alt="Resultado 4">
-        </div>
-      </div>
 
-      <!-- Results Gallery Row 3 -->
-      <div class="results-grid">
-        <div class="result-card portrait">
-          <img src="assets/img-8.png" alt="Resultado 5">
+        <!-- Results Gallery Row 2 -->
+        <div class="results-grid-2">
+          <div class="result-card landscape">
+            <img src="assets/img-4.jpeg" alt="Resultado 3">
+          </div>
+          <div class="result-card landscape">
+            <img src="assets/img-12.jpeg" alt="Resultado 4">
+          </div>
         </div>
-        <div class="result-card landscape">
-          <img src="assets/img-7.jpeg" alt="Resultado 6">
-        </div>
-      </div>
 
-      <!-- Results Gallery Row 4 -->
-      <div class="results-grid-2">
-        <div class="result-card landscape">
-          <img src="assets/img-5.png" alt="Resultado 7">
+        <!-- Results Gallery Row 3 -->
+        <div class="results-grid">
+          <div class="result-card portrait">
+            <img src="assets/img-8.png" alt="Resultado 5">
+          </div>
+          <div class="result-card landscape">
+            <img src="assets/img-7.jpeg" alt="Resultado 6">
+          </div>
         </div>
-        <div class="result-card portrait">
-          <img src="assets/img-13.png" alt="Resultado 8">
+
+        <!-- Results Gallery Row 4 -->
+        <div class="results-grid-2">
+          <div class="result-card landscape">
+            <img src="assets/img-5.png" alt="Resultado 7">
+          </div>
+          <div class="result-card portrait">
+            <img src="assets/img-13.png" alt="Resultado 8">
+          </div>
         </div>
       </div>
 
