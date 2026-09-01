@@ -39,9 +39,10 @@ function buildUserData(body, req) {
   const ua = req.headers['user-agent'] || body.client_user_agent || '';
   if (ua) user.client_user_agent = String(ua);
 
-  // fbp / fbc / em / ph devem ser hasheados em SHA-256 antes do envio.
-  if (body.fbp) user.fbp = sha256(body.fbp);
-  if (body.fbc) user.fbc = sha256(body.fbc);
+  // fbp / fbc: devem ser enviados SEM hash (formato nativo do Pixel).
+  // em / ph: obrigatoriamente hasheados em SHA-256 antes do envio.
+  if (body.fbp) user.fbp = String(body.fbp);
+  if (body.fbc) user.fbc = String(body.fbc);
   if (body.em) user.em = sha256(body.em);
   if (body.ph) user.ph = sha256(body.ph);
 
