@@ -1416,7 +1416,7 @@
         if (fbclid) {
           var existing = getCookie('_fbc');
           if (!existing) {
-            var value = 'fb.1.' + Math.floor(Date.now() / 1000) + '.' + fbclid;
+            var value = 'fb.1.' + Date.now() + '.' + fbclid;
             setCookie('_fbc', value, 90);
             persistTracking({ fbc: value });
           } else {
