@@ -1414,9 +1414,14 @@
         var params = new URLSearchParams(window.location.search);
         var fbclid = params.get('fbclid');
         if (fbclid) {
-          var value = 'fb.1.' + Math.floor(Date.now() / 1000) + '.' + fbclid;
-          setCookie('_fbc', value, 90);
-          persistTracking({ fbc: value });
+          var existing = getCookie('_fbc');
+          if (!existing) {
+            var value = 'fb.1.' + Math.floor(Date.now() / 1000) + '.' + fbclid;
+            setCookie('_fbc', value, 90);
+            persistTracking({ fbc: value });
+          } else {
+            persistTracking({ fbc: existing });
+          }
         } else {
           var existing = getCookie('_fbc') || '';
           if (existing) persistTracking({ fbc: existing });
@@ -1497,7 +1502,11 @@
             event: 'generate_contact',
             'event_id': eventId,
             'content_name': 'contato_whatsapp',
-            'waba_number': '5521967308920'
+            'waba_number': '5521967308920',
+            'user_data': {
+              fbp: tracking.fbp || getCookie('_fbp') || '',
+              fbc: tracking.fbc || getCookie('_fbc') || ''
+            }
           });
         } catch (e) {}
 
