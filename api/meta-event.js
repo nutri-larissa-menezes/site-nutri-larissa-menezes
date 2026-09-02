@@ -115,6 +115,15 @@ module.exports = async function handler(req, res) {
     `?access_token=${encodeURIComponent(ACCESS_TOKEN)}`;
 
   try {
+    // LOG DIAGNÓSTICO TEMPORÁRIO (inline)
+    const _log = eventPayload.data[0];
+    console.log('CAPI_RQ', JSON.stringify({
+      event_name: _log.event_name,
+      event_id: _log.event_id,
+      user_data_fbp: _log.user_data ? _log.user_data.fbp : undefined,
+      user_data_fbc: _log.user_data ? _log.user_data.fbc : undefined,
+    }));
+
     const response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -122,6 +131,9 @@ module.exports = async function handler(req, res) {
     });
 
     const data = await response.json();
+
+    // LOG DIAGNÓSTICO TEMPORÁRIO (inline)
+    console.log('CAPI_RS', response.status, JSON.stringify(data));
 
     if (!response.ok) {
       // Retorna o erro da Meta (sem expor o token) para debug
