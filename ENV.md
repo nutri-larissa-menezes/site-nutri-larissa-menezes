@@ -24,6 +24,6 @@ Configure estas variáveis no painel da Vercel em **Project → Settings → Env
 ## Fluxo completo
 
 1. **PageView** → Pixel (via GTM) — configurado no GTM, sem CAPI.
-2. **Contact** (clique em "Entendi e quero FALAR COM A LARISSA") → dispara no `dataLayer` (Pixel via GTM) **e** faz `fetch('/api/meta-event')` (CAPI), usando o **mesmo `event_id`** → Meta deduplica.
+2. **Contact** (clique em qualquer CTA de WhatsApp — "Agende o seu acompanhamento") → dispara no `dataLayer` (Pixel via GTM) **e** faz `fetch('/api/meta-event')` (CAPI), usando o **mesmo `event_id`** → Meta deduplica.
 
 > **Nota:** o site foi construído com Vite. Alterar `VITE_GTM_ID` exige um novo **build** (redeploy), pois é embutido na hora do build — não basta mudar a env no painel sem republicar.

@@ -168,23 +168,17 @@
 
     /* ===== ATTENTION BAR ===== */
     .attention-bar {
-      background: var(--color-accent);
+      background: var(--color-secondary);
       padding: 14px 0;
       text-align: center;
-      animation: attentionPulse 3s ease-in-out infinite;
-    }
-
-    @keyframes attentionPulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.85; }
     }
 
     .attention-bar h2 {
       font-family: var(--font-heading);
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--color-base);
-      letter-spacing: 1px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-secondary-text);
+      letter-spacing: 0.5px;
     }
 
     /* ===== HERO SECTION ===== */
@@ -221,9 +215,9 @@
 
     .hero-content h1 {
       font-family: var(--font-heading);
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 700;
-      line-height: 1.2;
+      line-height: 1.3;
       color: var(--color-text);
       margin-bottom: 20px;
     }
@@ -244,8 +238,8 @@
       font-weight: 700;
       font-style: italic;
       color: var(--color-text);
-      margin-top: 20px;
-      text-align: center;
+      margin-top: 10px;
+      text-align: left;
     }
 
     .hero-image {
@@ -264,22 +258,23 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 8px;
       background: var(--color-primary);
       color: var(--color-primary-text);
       font-family: var(--font-body);
-      font-size: 1.1rem;
+      font-size: 0.98rem;
       font-weight: 600;
-      padding: 16px 32px;
+      padding: 13px 26px;
       border: none;
-      border-radius: var(--radius-large);
+      border-radius: 12px;
       cursor: pointer;
       text-decoration: none;
       text-align: center;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(32, 122, 3, 0.3);
-      width: 100%;
-      max-width: 400px;
+      width: auto;
+      max-width: 100%;
+      white-space: nowrap;
     }
 
     .cta-button:hover {
@@ -289,16 +284,38 @@
     }
 
     .cta-button svg {
-      width: 22px;
-      height: 22px;
+      width: 18px;
+      height: 18px;
       fill: currentColor;
       flex-shrink: 0;
     }
 
     .cta-center {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
       padding: 0 0 40px;
+    }
+
+    .hero .cta-center {
+      align-items: flex-start;
+      padding-bottom: 16px;
+    }
+
+    .cta-disclaimer {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-muted);
+      text-align: center;
+      margin: 0;
+      max-width: 400px;
+    }
+
+    .hero .cta-disclaimer {
+      font-size: 0.74rem;
+      text-align: left;
     }
 
     /* ===== HOW IT WORKS ===== */
@@ -693,7 +710,7 @@
       }
 
       .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.55rem;
       }
 
       .hero-image {
@@ -797,7 +814,7 @@
       }
 
       .hero-content h1 {
-        font-size: 1.55rem;
+        font-size: 1.4rem;
         line-height: 1.3;
       }
 
@@ -842,9 +859,9 @@
       }
 
       .cta-button {
-        font-size: 0.95rem;
-        padding: 14px 20px;
-        min-height: 50px;
+        font-size: 0.85rem;
+        padding: 11px 18px;
+        white-space: nowrap;
       }
 
       .whatsapp-float {
@@ -872,7 +889,7 @@
       }
 
       .hero-content h1 {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
       }
 
       .hero-content p {
@@ -913,141 +930,6 @@
         font-size: 0.9rem;
       }
 
-      .modal-card {
-        padding: 24px 18px;
-        max-height: 90vh;
-        overflow-y: auto;
-      }
-
-      .modal-title {
-        font-size: 1.05rem;
-      }
-
-      .modal-highlight {
-        font-size: 0.9rem;
-      }
-
-      .modal-description {
-        font-size: 0.85rem;
-      }
-
-      .modal-btn {
-        font-size: 0.9rem;
-        padding: 12px 14px;
-      }
-    }
-
-    /* ===== WHATSAPP VALIDATION MODAL ===== */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.55);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10000;
-      padding: 16px;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    .modal-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .modal-card {
-      background: #f3fbf0;
-      width: 100%;
-      max-width: 440px;
-      border-radius: 18px;
-      padding: 28px 24px;
-      position: relative;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-      transform: scale(0.9);
-      transition: transform 0.3s ease;
-    }
-
-    .modal-overlay.active .modal-card {
-      transform: scale(1);
-    }
-
-    .modal-close {
-      position: absolute;
-      top: 12px;
-      right: 14px;
-      background: transparent;
-      border: none;
-      font-size: 24px;
-      color: #3b6b29;
-      cursor: pointer;
-      line-height: 1;
-      padding: 8px;
-      transition: opacity 0.2s;
-      min-width: 40px;
-      min-height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .modal-close:hover {
-      opacity: 0.7;
-    }
-
-    .modal-title {
-      font-family: var(--font-heading);
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #1c6b02;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .modal-highlight {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #1c6b02;
-      margin-bottom: 14px;
-      line-height: 1.4;
-    }
-
-    .modal-highlight u {
-      text-decoration: underline;
-    }
-
-    .modal-description {
-      font-size: 0.88rem;
-      color: #2b5d19;
-      line-height: 1.5;
-      margin-bottom: 22px;
-    }
-
-    .modal-btn {
-      display: block;
-      width: 100%;
-      background: var(--color-primary);
-      color: #ffffff;
-      font-family: var(--font-body);
-      font-weight: 700;
-      font-size: 0.95rem;
-      padding: 14px 16px;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      transition: background 0.2s ease, transform 0.2s ease;
-      box-shadow: 0 4px 12px rgba(32, 122, 3, 0.3);
-      min-height: 48px;
-    }
-
-    .modal-btn:hover {
-      background: var(--color-primary-hover);
-      transform: translateY(-1px);
     }
   </style>
 </head>
@@ -1074,7 +956,7 @@
         <li><a href="#como-funciona">Como Funciona</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#resultados">Resultados</a></li>
-        <li><a href="https://wa.me/5521967308920" target="_blank">Agendar Consulta</a></li>
+        <li><a href="https://wa.me/5521967308920?text=Oi%2C%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento." target="_blank">Agendar Consulta</a></li>
       </ul>
     </div>
   </nav>
@@ -1082,7 +964,7 @@
   <!-- ATTENTION BAR -->
   <section class="attention-bar">
     <div class="container">
-      <h2>ATENÇÃO: NÃO ACEITAMOS PLANO DE SAÚDE</h2>
+      <h2>Atendimento particular e personalizado</h2>
     </div>
   </section>
 
@@ -1090,14 +972,16 @@
   <section class="hero" id="inicio">
     <div class="container">
       <div class="hero-content">
-        <h1>RECUPERE SUA ENERGIA E DESTRAVE SEU EMAGRECIMENTO</h1>
-        <p>Cansaço constante, efeito sanfona, roupas apertadas e a sensação de que nada funciona depois dos 30 não é falta de disciplina, <strong>é falta de estratégia.</strong></p>
-        <p>Com <strong>meu acompanhamento</strong>, é possível organizar sua alimentação para a sua rotina, recuperar sua energia e finalmente ver os resultados aparecerem com constância, sem terrorismo alimentar e sem tentativas aleatórias.</p>
+        <h1>Você vive no efeito sanfona e está cansada de se frustrar?</h1>
+        <p><strong>Eu entendo você.</strong> A verdade é que, para o emagrecimento ser definitivo, ele precisa <strong>caber na sua rotina</strong>.</p>
+        <p>É por isso que criei um <strong>método de acompanhamento nutricional</strong> pensado exclusivamente para a realidade e as necessidades das mulheres.</p>
+        <p>Sem sofrimento, sem proibições absurdas. Apenas um caminho <strong>seguro e personalizado</strong> para você conquistar o corpo e a autoestima que tanto deseja.</p>
         <div class="cta-center">
-          <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+          <a href="https://wa.me/5521967308920?text=Oi%2C%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento." target="_blank" class="cta-button">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            AGENDAR CONSULTA NO WHATSAPP!
+            Agende o seu acompanhamento
           </a>
+          <p class="cta-disclaimer">Atendimento particular &bull; não atendemos plano de saúde.</p>
         </div>
         <p class="hero-location">NUTRICIONISTA EM ICARAÍ - NITERÓI</p>
       </div>
@@ -1144,10 +1028,11 @@
       </div>
 
       <div class="cta-center">
-        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+        <a href="https://wa.me/5521967308920?text=Oi%2C%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento." target="_blank" class="cta-button">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          AGENDAR CONSULTA NO WHATSAPP!
+          Agende o seu acompanhamento
         </a>
+        <p class="cta-disclaimer">Atendimento particular &bull; não atendemos plano de saúde.</p>
       </div>
     </div>
   </section>
@@ -1192,10 +1077,11 @@
       </div>
 
       <div class="cta-center">
-        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+        <a href="https://wa.me/5521967308920?text=Oi%2C%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento." target="_blank" class="cta-button">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          AGENDAR CONSULTA NO WHATSAPP!
+          Agende o seu acompanhamento
         </a>
+        <p class="cta-disclaimer">Atendimento particular &bull; não atendemos plano de saúde.</p>
       </div>
     </div>
   </section>
@@ -1219,10 +1105,11 @@
       </div>
 
       <div class="cta-center" style="margin-top: 30px;">
-        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+        <a href="https://wa.me/5521967308920?text=Oi%2C%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento." target="_blank" class="cta-button">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          AGENDAR CONSULTA NO WHATSAPP!
+          Agende o seu acompanhamento
         </a>
+        <p class="cta-disclaimer">Atendimento particular &bull; não atendemos plano de saúde.</p>
       </div>
     </div>
   </section>
@@ -1321,10 +1208,11 @@
       </div>
 
       <div class="cta-center">
-        <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button">
+        <a href="https://wa.me/5521967308920?text=Oi%2C%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento." target="_blank" class="cta-button">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          AGENDAR CONSULTA NO WHATSAPP!
+          Agende o seu acompanhamento
         </a>
+        <p class="cta-disclaimer">Atendimento particular &bull; não atendemos plano de saúde.</p>
       </div>
     </div>
   </section>
@@ -1337,22 +1225,9 @@
   </footer>
 
   <!-- FLOATING WHATSAPP BUTTON -->
-  <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+  <a href="https://wa.me/5521967308920?text=Oi%2C%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento." target="_blank" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
-
-  <!-- WHATSAPP VALIDATION MODAL -->
-  <div class="modal-overlay" id="whatsapp-modal" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" id="modal-close-btn" aria-label="Fechar">&times;</button>
-      <h3 class="modal-title">ANTES DE CONTINUAR 💚</h3>
-      <p class="modal-highlight">A Larissa <u>não atende</u> por plano de saúde.</p>
-      <p class="modal-description">O atendimento é particular e personalizado, para mulheres que buscam acompanhamento profissional para emagrecer com estratégia e constância.</p>
-      <a href="https://wa.me/5521967308920?text=Oi%20Larissa%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="modal-btn" id="modal-whatsapp-action" data-meta-event="contact">
-        Entendi e quero FALAR COM A LARISSA
-      </a>
-    </div>
-  </div>
 
   <script>
     // ================================================================
@@ -1442,15 +1317,14 @@
         return out;
       }
 
-      // ---- Mensagem personalizada a partir das UTMs (ou null se não houver) ----
+      // ---- Mensagem personalizada a partir das UTMs da URL atual (ou null) ----
       function resolveUtmMessage() {
-        var tracking = readTracking();
-        var utms = Object.keys(tracking).length ? tracking : captureUtms();
+        var utms = captureUtms();
         var source = utms.utm_source || '';
         var medium = utms.utm_medium || '';
         var content = utms.utm_content || '';
         if (source !== 'meta' || medium !== 'paid' || !content) return null;
-        return 'Oi, vi o seu anúncio sobre ' + content + ' e gostaria de saber mais sobre o seu acompanhamento.';
+        return 'Oi, vi o seu anúncio sobre *' + content + '* e gostaria de saber mais sobre o seu acompanhamento.';
       }
 
       // ---- Gerar event_id único por interação ----
@@ -1512,50 +1386,23 @@
       };
 
       // ================================================================
-      // LÓGICA DO MODAL (existente) + gatilho de contato
+      // CTA DE WHATSAPP: clique direto + mensagem UTM + evento de contato
       // ================================================================
       document.addEventListener('DOMContentLoaded', function () {
-        var modal = document.getElementById('whatsapp-modal');
-        var closeBtn = document.getElementById('modal-close-btn');
-        var actionBtn = document.getElementById('modal-whatsapp-action');
-
         var waLinks = document.querySelectorAll('a[href*="wa.me"]');
 
         waLinks.forEach(function (link) {
-          if (link.id === 'modal-whatsapp-action') return;
-          link.addEventListener('click', function (e) {
-            e.preventDefault();
-            modal.classList.add('active');
-            modal.setAttribute('aria-hidden', 'false');
+          link.addEventListener('click', function () {
+            // Se a URL vier de um anúncio (Meta/Paid) com criativo cadastrado,
+            // aplica a mensagem personalizada ao link antes de abrir o WhatsApp
+            var msg = resolveUtmMessage();
+            if (msg) {
+              link.href = 'https://wa.me/5521967308920?text=' +
+                encodeURIComponent(msg);
+            }
+            // Dispara o evento de contato (Pixel + CAPI) no clique real
+            if (window.__sendContactEvent) window.__sendContactEvent();
           });
-        });
-
-        closeBtn.addEventListener('click', function () {
-          modal.classList.remove('active');
-          modal.setAttribute('aria-hidden', 'true');
-        });
-
-        modal.addEventListener('click', function (e) {
-          if (e.target === modal) {
-            modal.classList.remove('active');
-            modal.setAttribute('aria-hidden', 'true');
-          }
-        });
-
-        // Clique em "Entendi e quero FALAR COM A LARISSA" = CONTATO REAL
-        actionBtn.addEventListener('click', function (e) {
-          // Se a URL vier de um anúncio (Meta/Paid) com criativo cadastrado,
-          // aplica a mensagem personalizada ao link antes de abrir o WhatsApp
-          var msg = resolveUtmMessage();
-          if (msg) {
-            actionBtn.href = 'https://wa.me/5521967308920?text=' +
-              encodeURIComponent(msg);
-          }
-
-          modal.classList.remove('active');
-          modal.setAttribute('aria-hidden', 'true');
-          // Dispara o evento de contato (Pixel + CAPI)
-          if (window.__sendContactEvent) window.__sendContactEvent();
         });
 
         // Auto-close mobile navbar menu

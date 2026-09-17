@@ -64,7 +64,7 @@ As tags de conversão (Pixel) precisam do `event_id` que o site já coloca no `d
 
 ### 4. Configurar o gatilho `generate_contact`
 
-O site dispara no `dataLayer` quando o usuário clica em **"Entendi e quero FALAR COM A LARISSA"**:
+O site dispara no `dataLayer` quando o usuário clica em um CTA de WhatsApp (**"Agende o seu acompanhamento"**):
 
 ```js
 dataLayer.push({
@@ -80,7 +80,7 @@ dataLayer.push({
 - Nome do evento: `generate_contact`
 - Este gatilho ativa a tag de Conversão (Passo 3).
 
-> **Por que `generate_contact` e não `click`?** O site só dispara quando o contato real acontece (o modal de validação é pulado no clique final), evitando conversões falsas por cliques em CTAs que apenas abrem o modal.
+> **Por que `generate_contact` e não `click`?** O site dispara no clique que efetivamente abre o WhatsApp, evitando conversões falsas por cliques que não levam ao contato.
 
 > **Nome do evento na Meta:** a tag dispara `fbq('track', 'Contact', ...)`, que corresponde ao evento **`Contact`** ("Entrar em contato") que sua campanha já otimiza.
 
@@ -98,7 +98,7 @@ dataLayer.push({
 ## Teste/Validação
 
 1. **API Teste do Meta** (Events Manager): preencha `META_TEST_EVENT_CODE` na Vercel e verifique os eventos marcados como *test* chegando à CAPI com o `event_id` correto.
-2. **Facebook Pixel Helper** (extensão do Chrome): abra o site, confirme o `PageView` no carregamento e o `Contact` após clicar em **"Entendi e quero FALAR COM A LARISSA"**.
+2. **Facebook Pixel Helper** (extensão do Chrome): abra o site, confirme o `PageView` no carregamento e o `Contact` após clicar em um CTA de WhatsApp (**"Agende o seu acompanhamento"**).
 3. **Events Manager → Atividade em tempo real**: confira que o evento `Contact` aparece **apenas 1 vez** (dedup OK) mesmo com Pixel + CAPI ativos.
 
 ---
