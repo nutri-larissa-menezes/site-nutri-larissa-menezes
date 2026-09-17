@@ -6,6 +6,9 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
   },
+  define: {
+    '%VITE_GTM_ID%': JSON.stringify(process.env.VITE_GTM_ID || ''),
+  },
   server: {
     host: true,
     port: 5173,
